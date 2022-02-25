@@ -36,3 +36,10 @@ export const get_color_string = (color: Color): string => {
 
     return `${color.where}-${color.color}-${color.intensity}${alpha}`;
 }
+
+export const get_color_darker = (color: Color, amount: number) => {
+    let alpha = ""
+    if (color.alpha) alpha = `/${color.alpha}`;
+
+    return `${color.where}-${color.color}-${color.intensity+amount}${alpha}`;
+}

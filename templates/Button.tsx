@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Color, ColorDefault, get_color_string } from '../models/Colors';
+import { Color, ColorDefault, get_color_darker, get_color_string } from '../models/Colors';
 
 interface ButtonProps {
     value: string,
@@ -14,7 +14,13 @@ const Button: FC<ButtonProps> = ({ value, onclick, color }) => {
     return (
         <button
             onClick={onclick}
-            className={`${get_color_string(color)} px-5 py-3 uppercase tracking-wider shadow-md hover:shadow-lg rounded-lg transition duration-300 text-white`}
+            className={`
+                    ${get_color_string(color)} 
+                    hover:${get_color_darker(color, 100)}
+                    px-5 py-3 uppercase tracking-wider 
+                    shadow-md hover:shadow-xl rounded-lg 
+                    transition duration-300 text-white font-bold
+                `}
         >{value}</button>
     )
 }
