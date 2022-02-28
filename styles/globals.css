@@ -18,3 +18,31 @@ a {
 * {
   box-sizing: border-box;
 }
+<<<<<<< HEAD
+=======
+
+.react-pattern-lock__pattern-wrapper.error
+  .react-pattern-lock__point-wrapper.selected
+  .react-pattern-lock__point
+  .react-pattern-lock__point-inner {
+        background: #EF4444 !important;
+}
+.react-pattern-lock__pattern-wrapper
+  .react-pattern-lock__point-wrapper
+  .react-pattern-lock__point
+  .react-pattern-lock__point-inner {
+  background: #3B82F6 !important;
+}
+
+.react-pattern-lock__pattern-wrapper.error
+  .react-pattern-lock__connector-wrapper
+  .react-pattern-lock__connector {
+  background: #EF4444 !important;
+}
+
+.react-pattern-lock__pattern-wrapper
+  .react-pattern-lock__connector-wrapper
+  .react-pattern-lock__connector {
+  background: #3B82F6 !important;
+}
+>>>>>>> pattern_lock

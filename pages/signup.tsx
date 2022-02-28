@@ -2,6 +2,10 @@ import { Links } from "../models/Links";
 import Input from "../templates/Input";
 import NavBar from "../templates/NavBar";
 import Button from "../templates/Button";
+<<<<<<< HEAD
+=======
+import PatternLockComponent from "../templates/PatternLock";
+>>>>>>> pattern_lock
 import Link from "next/link";
 import Message from "../templates/Message";
 
@@ -48,11 +52,24 @@ const Signup = () => {
                         htmlFor="Confirm Password"
                         onChange={(e) => console.log(e)}
                     />
+<<<<<<< HEAD
                     <div className="col-span-full pb-3 justify-self-center">
                         <Message message="Password doesn't match"/>
                     </div>
                     <Button 
                         value="Submit"
+=======
+
+                    <div className="col-span-full">
+                        <PatternLockComponent/>
+                    </div>
+                    <div className="col-span-full justify-self-center pb-3">
+                        <Message message="Password doesn't match"/>
+                    </div>
+
+                    <Button 
+                        value="Next"
+>>>>>>> pattern_lock
                         onclick={() => console.log()}
                     />
                 </form>
@@ -68,4 +85,8 @@ const Signup = () => {
     )
 }
 
+<<<<<<< HEAD
 export default Signup;
+=======
+export default Signup;
+>>>>>>> pattern_lock
